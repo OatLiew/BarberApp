@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+      <meta name="author" content="www.frebsite.nl" />
+      <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+      <title>jQuery.mmenu - Barber</title>
+      <link type="text/css" rel="stylesheet" href="CSS/demo.css" />
+      <link type="text/css" rel="stylesheet" href="CSS/jquery.mmenu.css" />
+      <link type="text/css" rel="stylesheet" href="CSS/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+      <link type="text/css" rel="stylesheet" href="CSS/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+      <link rel="stylesheet" href="CSS/styles.css">
+      <style type="text/css">
+         @media all and (min-width: 900px) {
+            html, body {
+               height: 100%;
+            }
+            #menu {
+               background: #eee;
+            }
+            #page {
+               border-left: 1px solid #ccc;
+               min-height: 100%;
+            }
+            /* hide open-button */
+            a[href="#menu"]
+            {
+               display: none !important;
+            }
+         }
+      </style>
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="JS/jquery.mmenu.js"></script>
+      <script type="text/javascript">
+         $(function() {
+            $('nav#menu').mmenu({
+               classes: 'mm-zoom-menu'
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <div id="page">
+         <div id="header">
+            <a href="#menu"></a>
+            Barber App
+         </div>
+         <div id="content">
+            <h2>List of Barbers</h2>
+            <figure>
+                <a href="b1.html" ><img src="img/b1.png" alt="barber1"></a>
+                <figcaption>David </figcaption>
+            </figure>
+            <figure>
+                <a href="b2.html" ><img src="img/b2.png" alt="barber2"></a>
+                <figcaption>Jie Li</figcaption>
+            </figure>
+            <figure>
+                <a href="b3.html" ><img src="img/b3.png" alt="barber3"></a>
+                <figcaption>Chase Cutter</figcaption>
+            </figure>
+            <figure>
+                <a href="b4.html" ><img src="img/b4.png" alt="barber4"></a>
+                <figcaption>Cutter Killer</figcaption>
+            </figure>
+            <figure>
+                <a href="b5.html" ><img src="img/b1.png" alt="barber5"></a>
+                <figcaption>Blabla cutter</figcaption>
+            </figure>
+            <figure>
+                <a href="b6.html" ><img src="img/b1.png" alt="barber6"></a>
+                <figcaption>ABC cutter</figcaption>
+            </figure>
+            <figure>
+                <a href="b7.html" ><img src="img/b1.png" alt="barber7"></a>
+                <figcaption>DD barber</figcaption>
+            </figure>
+         </div>
+         <nav id="menu">
+            <ul>
+               <li class="Selected"><a href="index.html">Home</a></li>
+               <li><a href="horizontal-submenus.html">Search</a></li>
+               <li><a href="vertical-submenus.html">Payment</a></li>
+               <li><a href="photos.html">Messages</a></li>
+               <li><a href="positions.html">Visitors</a></li>
+               <li><a href="colors.html">QuickMatch</a></li>
+            </ul>
+         </nav>
+      </div>
+      <script type="text/javascript" language="javascript" src="footer.js"></script>
+   </body>
+</html>
